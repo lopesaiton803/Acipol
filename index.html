@@ -1,0 +1,1510 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+<!-- Mirrored from pixydrops.com/govity/main-html/index.html by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 06 Oct 2025 09:37:53 GMT -->
+<!-- Added by HTTrack -->
+<meta http-equiv="content-type" content="text/html;charset=utf-8" /><!-- /Added by HTTrack -->
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title> Acipol </title>
+    <!-- favicons Icons -->
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/images/logo/logorealacipol.jpeg" />
+    <link rel="icon" type="image/png" sizes="64x64" href="assets/images/logo/logorealacipol.jpeg" />
+    <link rel="icon" type="image/png" sizes="64x64" href="assets/images/logo/logorealacipol.jpeg" />
+    <link rel="manifest" href="assets/images/logo/logoacipol.png" />
+    <meta name="description" content="govity HTML 5 Template " />
+
+    <!-- fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com/">
+
+    <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin>
+
+    <link rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet">
+
+    <!-- Google Fonts: Open Sans -->
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+
+
+
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- 🔹 Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+
+    <link rel="stylesheet" href="assets/vendors/bootstrap/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="assets/vendors/animate/animate.min.css" />
+    <link rel="stylesheet" href="assets/vendors/animate/custom-animate.css" />
+    <link rel="stylesheet" href="assets/vendors/fontawesome/css/all.min.css" />
+    <link rel="stylesheet" href="assets/vendors/jarallax/jarallax.css" />
+    <link rel="stylesheet" href="assets/vendors/jquery-magnific-popup/jquery.magnific-popup.css" />
+    <link rel="stylesheet" href="assets/vendors/nouislider/nouislider.min.css" />
+    <link rel="stylesheet" href="assets/vendors/nouislider/nouislider.pips.css" />
+    <link rel="stylesheet" href="assets/vendors/odometer/odometer.min.css" />
+    <link rel="stylesheet" href="assets/vendors/swiper/swiper.min.css" />
+    <link rel="stylesheet" href="assets/vendors/govity-icons/style.css">
+    <link rel="stylesheet" href="assets/vendors/tiny-slider/tiny-slider.min.css" />
+    <link rel="stylesheet" href="assets/vendors/reey-font/stylesheet.css" />
+    <link rel="stylesheet" href="assets/vendors/owl-carousel/owl.carousel.min.css" />
+    <link rel="stylesheet" href="assets/vendors/owl-carousel/owl.theme.default.min.css" />
+    <link rel="stylesheet" href="assets/vendors/bxslider/jquery.bxslider.css" />
+    <link rel="stylesheet" href="assets/vendors/bootstrap-select/css/bootstrap-select.min.css" />
+    <link rel="stylesheet" href="assets/vendors/vegas/vegas.min.css" />
+    <link rel="stylesheet" href="assets/vendors/jquery-ui/jquery-ui.css" />
+    <link rel="stylesheet" href="assets/vendors/timepicker/timePicker.css" />
+    <link rel="stylesheet" href="assets/vendors/nice-select/nice-select.css" />
+    <link href="assets/css/other/global.css" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/other/style.css">
+
+
+
+    <div class="stricky-header stricked-menu main-menu">
+        <div class="sticky-header__content"></div><!-- /.sticky-header__content -->
+    </div><!-- /.stricky-header -->
+
+
+
+    <style>
+        /* Estilos dos dropdowns do primeiro navbar */
+        .navigation .dropdown {
+            position: relative;
+        }
+
+        .navigation .dropdown>ul {
+            position: absolute;
+            top: 100%;
+            left: 0;
+            background: rgb(42, 40, 40);
+            color: white;
+            min-width: 200px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            border-radius: 4px;
+            opacity: 0;
+            visibility: hidden;
+            transform: translateY(10px);
+            transition: all 0.3s ease;
+            z-index: 1000;
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        .navigation .dropdown:hover>ul {
+            opacity: 1;
+            visibility: visible;
+            transform: translateY(0);
+        }
+
+        .navigation .dropdown ul li {
+            border-bottom: 1px solid #f0f0f0;
+        }
+
+        .navigation .dropdown ul li:last-child {
+            border-bottom: none;
+        }
+
+        .navigation .dropdown ul li a {
+            display: block;
+            padding: 10px 15px;
+            color: white;
+            text-decoration: none;
+            transition: all 0.3s ease;
+        }
+
+        .navigation .dropdown ul li a {
+            position: relative;
+            display: block;
+            overflow: hidden;
+            color: white;
+            padding: 10px 15px;
+            transition: color 0.3s ease;
+            z-index: 1;
+        }
+
+        /* Cria a barra verde invisível inicialmente */
+        .navigation .dropdown ul li a::before {
+            content: "";
+            position: absolute;
+            left: 0;
+            top: 0;
+            width: 0%;
+            height: 100%;
+            background: #0ca554;
+            z-index: -1;
+            transition: width 0.4s ease;
+            transition-delay: 0.1s;
+            /* pequeno delay para suavizar */
+        }
+
+        /* Quando passa o mouse — barra cresce da esquerda p/ direita */
+        .navigation .dropdown ul li a:hover::before {
+            width: 100%;
+        }
+
+        /* Cor do texto ao passar o mouse */
+        .navigation .dropdown ul li a:hover {
+            color: #fff;
+        }
+
+        /* Submenu */
+        .navigation .dropdown .dropdown {
+            position: relative;
+        }
+
+        .navigation .dropdown .dropdown>ul {
+            position: absolute;
+            left: 100%;
+            top: 0;
+            margin-left: 1px;
+        }
+
+        .navigation .dropdown .dropdown>a {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        /* SVG icon */
+        .navigation .dropdown .dropdown>a svg {
+            transition: transform 0.3s ease;
+        }
+
+        .navigation .dropdown .dropdown:hover>a svg {
+            transform: rotate(180deg);
+        }
+    </style>
+
+
+
+    <!-- template styles -->
+    <link rel="stylesheet" href="assets/css/govity.css" />
+    <link rel="stylesheet" href="assets/css/govity-responsive.css" />
+</head>
+
+<body class="">
+
+
+
+
+
+
+
+
+    <!-- /.preloader -->
+
+
+
+    <div class="page-wrapper">
+
+
+        <!-- 🟢 Preloader com logo -->
+        <!-- 🟢 Preloader -->
+        <!-- <div id="preloader"> -->
+         <!-- <div class="preloader-content">
+    <img src="assets/images/logo/logorealacipol.jpeg" alt="Logo ACIPOL" class="preloader-logo">
+    <div class="spinner"></div>
+  </div> 
+    </div> -->
+
+
+    <!-- Preloader -->
+
+    <!-- End preloader -->
+
+
+    <!-- ===== HEADER ACIPOL ===== -->
+    <header>
+        <!-- 🔹 Top Bar -->
+        <div class="top-bar py-2 text-dark" style="background-color: #0ca554;">
+            <div class="container d-flex flex-wrap justify-content-between align-items-center">
+
+                <!-- Data e Hora -->
+                <div id="dateTimeDisplay" class="fw-semibold text-white small"></div>
+
+                <!-- Email -->
+                <div class="fw-semibold small  text-center flex-grow-1">
+                    <a href="mailto:info@acipol.gov.mz" class="text-white text-decoration-none">
+                        info@acipol.gov.mz
+                    </a>
+                </div>
+
+                <!-- Redes + Idioma -->
+                <div class="d-flex align-items-center gap-3">
+                    <div class="social-links d-flex gap-2">
+
+
+                        <a href="https://www.facebook.com/p/Academia-de-Ci%C3%AAncias-Policiais-ACIPOL-100074077729590/"
+                            target="_blank" class="text-white"><i class="fab fa-facebook-f"></i></a>
+
+                    </div>
+
+
+                </div>
+            </div>
+        </div>
+
+
+
+
+        <nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm sticky-top">
+            <div class="container">
+                <a class="navbar-brand" href="index.html">
+                    <img src="assets/images/logo/logorealacipol.jpeg" alt="ACIPOL" width="120px">
+                </a>
+
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNavbar"
+                    aria-controls="mainNavbar" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="mainNavbar">
+                    <ul class="navbar-nav mx-auto">
+                        <li class="nav-item">
+                            <a class="nav-link active" href="index.html">Início</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="cursoseformacoes.html">Cursos e Formações</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="noticias.html">Notícias</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="galeria.html">Galeria</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="contact.html">Contacto</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    
+
+    <!-- Bootstrap Bundle com Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+
+
+    <!-- Main Slider Start -->
+    <section class="gradient-border main-slider">
+        <div class="main-slider__carousel owl-carousel owl-theme thm-owl__carousel"
+            data-owl-options='{"loop": true, "items": 1, "navText": ["&#8249;","&#8250;"], "margin": 0, "dots": true, "nav": true, "animateOut": "slideOutDown", "animateIn": "fadeIn", "active": true, "smartSpeed": 1000, "autoplay": true, "autoplayTimeout": 7000, "autoplayHoverPause": false}'>
+
+            <!-- SLIDE 1 (agora com chapo e graduados) -->
+            <div class="item main-slider__slide-2">
+                <div class="main-slider__bg" style="background-image: url(assets/images/logo/chapocomgraduados.jpg);">
+                </div><!-- /.slider-one__bg -->
+                <div class="main-slider__shape-1">
+                    <img src="assets/images/shapes/main-slider-shape-1.png" alt="">
+                </div>
+                <div class="main-slider__shape-2">
+                    <img src="assets/images/shapes/main-slider-shape-2.png" alt="">
+                </div>
+                <div class="main-slider__shape-3">
+                    <img src="assets/images/shapes/main-slider-shape-3.png" alt="">
+                </div>
+
+                <div class="container">
+                    <div class="main-slider__content">
+                        <p class="main-slider__sub-title">ACIPOL</p>
+                        <h3 class="main-slider__title">Ciência Policial
+                            <br>de Vanguarda
+                        </h3>
+                        <div class="main-slider__btn-box">
+                            <a href="courses.html" class="main-slider__btn thm-btn">Cursos</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- SLIDE 2 (graduados) -->
+            <div class="item main-slider__slide-1">
+                <div class="main-slider__bg" style="background-image: url(assets/images/logo/graduados.jpg);">
+                </div><!-- /.slider-one__bg -->
+                <div class="main-slider__shape-1">
+                    <img src="assets/images/shapes/main-slider-shape-1.png" alt="">
+                </div>
+                <div class="main-slider__shape-2">
+                    <img src="assets/images/shapes/main-slider-shape-2.png" alt="">
+                </div>
+                <div class="main-slider__shape-3">
+                    <img src="assets/images/shapes/main-slider-shape-3.png" alt="">
+                </div>
+
+                <div class="container">
+                    <div class="main-slider__content">
+                        <p class="main-slider__sub-title">ACIPOL</p>
+                        <h3 class="main-slider__title">Liderança e Excelência
+                            <br>em Segurança Pública
+                        </h3>
+                        <div class="main-slider__btn-box">
+                            <a href="about.html" class="main-slider__btn thm-btn">Conhecer</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- SLIDE 3 (Zandamela) -->
+            <div class="item main-slider__slide-3">
+                <div class="main-slider__bg"
+                    style="background-image: url(assets/images/logo/zandamela.jpg); background-position: center center;">
+                </div><!-- /.slider-one__bg -->
+                <div class="main-slider__shape-1">
+                    <img src="assets/images/shapes/main-slider-shape-1.png" alt="">
+                </div>
+                <div class="main-slider__shape-2">
+                    <img src="assets/images/shapes/main-slider-shape-2.png" alt="">
+                </div>
+                <div class="main-slider__shape-3">
+                    <img src="assets/images/shapes/main-slider-shape-3.png" alt="">
+                </div>
+
+                <div class="container">
+                    <div class="main-slider__content">
+                        <p class="main-slider__sub-title">ACIPOL</p>
+                        <h3 class="main-slider__title">Formando os Guardiões
+                            <br>da Nação
+                        </h3>
+                        <div class="main-slider__btn-box">
+                            <a href="research.html" class="main-slider__btn thm-btn">Missão</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Main Slider End -->
+
+
+
+
+    <!-- About Section Four -->
+    <section class="about-one">
+        <div class="container">
+            <div class="row">
+                <div class="col-xl-6">
+                    <div class="about-one__left">
+                        <div class="about-one__shape-1 float-bob-x">
+                            <img src="assets/images/shapes/about-one-shape-1.png" alt="">
+                        </div>
+                        <div class="about-one__shape-3 float-bob-y">
+                            <img src="assets/images/shapes/about-one-shape-2.png" alt="">
+                        </div>
+                        <div class="about-one__img-box">
+                            <div class="about-one__img">
+                                <img src="assets/images/logo/leadership.jpg" alt=""
+                                    style="width: 100%; height: 550px; object-fit: cover; border-radius: 10px; display: block;">
+                            </div>
+                            <div class="about-one__img-2">
+                                <img src="assets/images/logo/custodiofabiao.jpeg" alt=""
+                                    style="width: 300px; height: 320px; object-fit: cover; border-radius: 10px; display: block;">
+                            </div>
+                            <div class="about-one__shape-2">
+                                <img src="assets/images/shapes/about-one-shape-2S.png" alt="">
+                            </div>
+                            <div class="about-one__video-link">
+                                <a href="assets/images/logo/Magnífico Reitor da Acipol Visita Academia Militar Marechal Samora Machel.mp4"
+                                    class="video-popup">
+                                    <div class="about-one__video-icon">
+                                        <span class="fa fa-play"></span>
+                                        <i class="ripple"></i>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="about-one__call-box">
+                                <!-- SEGUNDA MELHOR: Coroa - simboliza liderança de forma elegante -->
+                                <div class="about-one__call-icon">
+                                    <!-- Opção 3: Ícone de medalha/reconhecimento -->
+                                    <i class="fas fa-medal" style="color: gold; font-size: 24px;"></i>
+                                </div>
+                                <div class="about-one__call-box-content">
+                                    <p class="about-one__call-text">Reitor</p>
+                                    <h4 class="about-one__call-number"><a href="tel:9212340800">Custódio
+                                            Zandamela</a></h4>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-6">
+                    <div class="about-one__right">
+                        <div class="section-title text-left">
+                            <div class="section-title__icon">
+                                <img src="assets/images/logo/logorealacipol.jpeg" width="120x" alt="">
+                            </div>
+                            <span class="section-title__tagline " style="color: #0ca554;">Bem-vindo à nossa
+                                instituição</span>
+                            <h2 class="section-title__title fs-3">Mensagem do Reitor</h2>
+                        </div>
+                        <p class="about-one__text">É com grande satisfação que recebo todos os visitantes ao
+                            nosso portal institucional. Como Reitor, tenho o privilégio de liderar uma
+                            comunidade académica dedicada à excelência, inovação e formação de cidadãos
+                            comprometidos com o desenvolvimento do nosso país.</p>
+                        <div class="about-one__icon-and-big-text">
+                            <div class="about-one__icon">
+                                <span class="fas fa-graduation-cap fs-1" style="color: #0ca554;"></span>
+                            </div>
+                            <p class="about-one__big-text" style="color: black;">Educação de qualidade para
+                                construir um futuro melhor.</p>
+                        </div>
+                        <p class="about-one__text-2">Acreditamos no poder transformador da educação e no
+                            potencial ilimitado dos nossos estudantes. Nosso compromisso é proporcionar um
+                            ambiente de aprendizagem estimulante, com recursos modernos e um corpo docente
+                            qualificado.</p>
+                        <div class="about-one__btn-box-and-signature">
+                            <a href="about.html" class="about-one__btn thm-btn">Saiba Mais</a>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- End About Section Four -->
+
+
+
+
+
+
+    <!-- foco -->
+
+
+
+
+
+
+    <!-- end foco -->
+
+
+
+    <!--Video One Start-->
+    <section class="video-one">
+        <div class="video-one__bg jarallax" data-jarallax data-speed="0.2" data-imgPosition="80% 0%"
+            style="background-image: url(assets/images/logo/cta.jpg);"></div>
+
+        <div class="container">
+            <div class="row">
+                <div class="col-xl-12">
+                    <div class="video-one__inner">
+                        <div class="video-one__video-link">
+                            <a href="assets/images/logo/Academia de Ciências Policiais distinguida pela excelência na formação.mp4"
+                                class="video-popup">
+                                <div class="video-one__video-icon">
+                                    <span class="fa fa-play"></span>
+                                    <i class="ripple"></i>
+                                </div>
+                            </a>
+                        </div>
+                        <h2 class="video-one__video-title">
+                            Torne-se parte da nova geração de<br> líderes da segurança em Moçambique
+                        </h2>
+
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--Video One End-->
+
+    <!--Documents One Start-->
+    <section class="documents-one">
+        <div class="container">
+            <div class="documents-one__inner row g-0">
+
+                <!-- Lado esquerdo: título -->
+                <div class="documents-one__left col-auto pe-4 d-flex align-items-start">
+                    <p class=" text-success mb-0">Documentos <br> Recentes</p>
+                </div>
+
+                <!-- Lado direito: documentos -->
+                <div class="documents-one__right col">
+                    <ul class="documents-one__points list-unstyled mb-0">
+
+                        <!-- Documento 1 -->
+                        <li>
+                            <div
+                                class="documents-one__single d-flex justify-content-between align-items-center py-2 border-bottom">
+                                <div class="documents-one__content d-flex align-items-center gap-3">
+                                    <div class="documents-one__icon">
+                                        <a href="assets/images/logo/ACIPOL-Edital-de-Admissao-2025.pdf"><i
+                                                class="bi bi-download fs-4 text-success" download></i></a>
+                                    </div>
+                                    <div>
+                                        <h3 class="documents-one__title mb-1">
+                                            <a href="assets/images/logo/ACIPOL-Edital-de-Admissao-2025.pdf" download
+                                                class="text-decoration-none text-dark">
+                                                Edital de Candidatura 2025
+
+                                            </a>
+                                        </h3>
+                                        <p class="documents-one__text mb-0">Baixe o edital.</p>
+                                    </div>
+                                </div>
+                                <div class="documents-one__icon-two d-flex align-items-center justify-content-center">
+                                    <i class="bi bi-filetype-pdf fs-3 text-white"></i>
+                                </div>
+                            </div>
+                        </li>
+
+                        <!-- Documento 2 -->
+                        <li>
+                            <div
+                                class="documents-one__single d-flex justify-content-between align-items-center py-2 border-bottom">
+                                <div class="documents-one__content d-flex align-items-center gap-3">
+                                    <div class="documents-one__icon">
+                                        <i class="bi bi-download fs-4 text-success"></i>
+                                    </div>
+                                    <div>
+                                        <h3 class="documents-one__title mb-1">
+                                            <a href="assets/docs/Edital-de-Candidatura-ACIPOL-2025.pdf" download
+                                                class="text-decoration-none text-dark">
+                                                Calendario academico 2025
+                                            </a>
+                                        </h3>
+                                        <p class="documents-one__text mb-0">Baixe o edital </p>
+                                    </div>
+                                </div>
+                                <div class="documents-one__icon-two d-flex align-items-center justify-content-center">
+                                    <i class="bi bi-filetype-pdf fs-3 text-white"></i>
+                                </div>
+                            </div>
+                        </li>
+
+                    </ul>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+
+
+
+    <!--Documents One End-->
+
+    <!--Counter One Start-->
+    <section class="counter-one mask-b-to-75%">
+        <div class="counter-one__bg" style="background-image: url(assets/images/logo/hero2.jpg)" ;>
+        </div>
+        <div class="container">
+            <div class="counter-one__inner">
+                <ul class="counter-one__list list-unstyled">
+                    <li>
+                        <div class="counter-one__count">
+                            <h3 class="odometer" data-count="15000" style="font-size:3rem;">00</h3>
+                            <span class="ml-3">+</span>
+                        </div>
+                        <p class="counter-one__text">Profissionais formados
+                            <br>desde 1990
+                        </p>
+                    </li>
+                    <li>
+                        <div class="counter-one__count">
+                            <h3 class="odometer" data-count="286" style="font-size:3rem;">00</h3>
+                            <span class=""></span>
+                        </div>
+                        <p class="counter-one__text">Docentes e investigadores
+                            <br>permanentes
+                        </p>
+                    </li>
+                    <li>
+                        <div class="counter-one__count">
+                            <h3 class="odometer" data-count="92" style="font-size:3rem;">00</h3>
+                            <span class=""></span>
+                        </div>
+                        <p class="counter-one__text">Parcerias internacionais
+                            <br>ativas
+                        </p>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+
+
+    <!--Counter One End-->
+
+
+    <section class="department-three bg-[#0ca554]">
+        <div class="department-three__bg-top" style="background-image: url(assets/images/logo/SL-042221-42420-07.jpg);">
+        </div>
+        <div class="department-three__bg"
+            style="background-image: url(assets/images/backgrounds/department-three-bg.png);"></div>
+        <div class="container">
+            <div class="section-title text-center">
+                <div class="section-title__icon">
+                    <i class="fas fa-graduation-cap fa-1x" style="color: #0ca554;"></i>
+                </div>
+                <span class="section-title__tagline" style="color: #0ca554;">Formação ACIPOL</span>
+                <h2 class="section-title__title" style="line-height: 54px;">Cursos e Formação
+                    <br> Especializada
+                </h2>
+            </div>
+            <div class="row">
+                <!-- Curso 1: Licenciatura em Ciências Policiais -->
+                <div class="col-xl-3 col-lg-4 col-md-6">
+                    <div class="department-three__single">
+                        <div class="department-three__icon">
+                            <span class="fa fa-shield-alt"></span>
+                        </div>
+                        <h3 class="department-three__title"><a href="licenciatura-ciencias-policiais.html">Licenciatura
+                                em
+                                <br>Ciências Policiais</a></h3>
+                        <div class="department-three__btn-box">
+                            <a href="cursoseformacoes.html" class="department-three__btn">Consultar
+                                Edital<i class="fa fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <!--Department Three Single End-->
+
+                <!-- Curso 2: Mestrado em Ciências Policiais -->
+                <div class="col-xl-3 col-lg-4 col-md-6">
+                    <div class="department-three__single">
+                        <div class="department-three__icon">
+                            <span class="fa fa-user-graduate"></span>
+                        </div>
+                        <h3 class="department-three__title"><a href="mestrado-ciencias-policiais.html">Mestrado
+                                em
+                                <br>Ciências Policiais</a></h3>
+                        <div class="department-three__btn-box">
+                            <a href="cursoseformacoes.html" class="department-three__btn">Consultar
+                                Edital<i class="fa fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <!--Department Three Single End-->
+
+                <!-- Curso 3: Cursos de Especialização -->
+                <div class="col-xl-3 col-lg-4 col-md-6">
+                    <div class="department-three__single">
+                        <div class="department-three__icon">
+                            <span class="fa fa-search"></span>
+                        </div>
+                        <h3 class="department-three__title"><a href="cursos-especializacao.html">Cursos de
+                                <br>Especialização</a></h3>
+                        <div class="department-three__btn-box">
+                            <a href="cursoseformacoes.html" class="department-three__btn">Ver Cursos<i
+                                    class="fa fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <!--Department Three Single End-->
+
+                <!-- Curso 4: Cursos Executivos -->
+                <div class="col-xl-3 col-lg-4 col-md-6">
+                    <div class="department-three__single">
+                        <div class="department-three__icon">
+                            <span class="fa fa-chart-line"></span>
+                        </div>
+                        <h3 class="department-three__title"><a href="cursos-executivos.html">Cursos
+                                <br>Executivos</a></h3>
+                        <div class="department-three__btn-box">
+                            <a href="cursoseformacoes.html" class="department-three__btn">Saiba Mais<i
+                                    class="fa fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <!--Department Three Single End-->
+
+                <!-- Curso 5: Investigação Criminal -->
+                <div class="col-xl-3 col-lg-4 col-md-6">
+                    <div class="department-three__single">
+                        <div class="department-three__icon">
+                            <span class="fa fa-fingerprint"></span>
+                        </div>
+                        <h3 class="department-three__title"><a href="investigacao-criminal.html">Investigação
+                                <br>Criminal</a></h3>
+                        <div class="department-three__btn-box">
+                            <a href="cursoseformacoes.html" class="department-three__btn">Ver Curso<i
+                                    class="fa fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <!--Department Three Single End-->
+
+                <!-- Curso 6: Policiamento Ambiental -->
+                <div class="col-xl-3 col-lg-4 col-md-6">
+                    <div class="department-three__single">
+                        <div class="department-three__icon">
+                            <span class="fa fa-leaf"></span>
+                        </div>
+                        <h3 class="department-three__title"><a href="policiamento-ambiental.html">Policiamento
+                                <br>Ambiental</a></h3>
+                        <div class="department-three__btn-box">
+                            <a href="cursoseformacoes.html" class="department-three__btn">Ver Curso<i
+                                    class="fa fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <!--Department Three Single End-->
+
+                <!-- Curso 7: Direitos Humanos -->
+                <div class="col-xl-3 col-lg-4 col-md-6">
+                    <div class="department-three__single">
+                        <div class="department-three__icon">
+                            <span class="fa fa-balance-scale"></span>
+                        </div>
+                        <h3 class="department-three__title"><a href="direitos-humanos.html">Direitos
+                                <br>Humanos</a></h3>
+                        <div class="department-three__btn-box">
+                            <a href="cursoseformacoes.html" class="department-three__btn">Ver Curso<i
+                                    class="fa fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <!--Department Three Single End-->
+
+                <!-- Card Ver Todos os Cursos -->
+                <div class="col-xl-3 col-lg-4 col-md-6">
+                    <div class="department-three__single-two">
+                        <div class="department-three__icon-two">
+                            <a href="cursoseformacoes.html"><span class="fa fa-plus-circle"></span></a>
+                        </div>
+                        <h3 class="department-three__title-two"><a href="cursoseformacoes.html">Ver todos
+                                <br>os cursos
+                                <br>& formações</a></h3>
+                    </div>
+                </div>
+                <!--Department Three Single End-->
+            </div>
+        </div>
+    </section>
+
+
+    <!-- cta end -->
+
+
+
+
+
+    <!-- fdfsdfdsfdsf -->
+    <section class="portfolio-three">
+        <div class="container" style="max-width: 1180px; margin: 0 auto;">
+            <div class="section-title text-center">
+                <div class="section-title__icon">
+                    <svg width="70" height="70" viewBox="0 0 60 60" fill="#0ca554" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M15 25L30 15L45 25V45H15V25Z" stroke="#0ca554" stroke-width="2" fill="white" />
+                        <rect x="20" y="30" width="6" height="8" fill="#0ca554" />
+                        <rect x="34" y="30" width="6" height="8" fill="#0ca554" />
+                        <rect x="27" y="35" width="6" height="3" fill="#0ca554" />
+                        <path d="M12 45H48" stroke="#0ca554" stroke-width="3" />
+                    </svg> <span class="section-title__tagline" style="color: #0ca554;">Enventos
+                        institucionais</span>
+                    <h2 class="section-title__title mb-4" style="line-height: 54px;">Momentos Marcantes
+                        <br> da Nossa Academia
+                    </h2>
+                </div>
+
+                <div class="row justify-content-center gx-4 gy-4">
+                    <!--Formatura de Agentes-->
+                    <div class="col-xl-4 col-lg-4 col-md-6">
+                        <div class="portfolio-three__single">
+                            <div class="portfolio-three__img-box">
+                                <div class="portfolio-three__img">
+                                    <img src="assets/images/logo/noticaisacipol.jpg" alt="Formatura de Agentes"
+                                        style="height: 300px; object-fit: cover;">
+                                    <div class="image-overlay"
+                                        style="position: absolute; top: 0; left: 0; right: 0; bottom: 0; background: rgba(0,0,0,0.4);">
+                                    </div>
+                                </div>
+                                <div class="portfolio-three__content">
+                                    <p class="portfolio-three__sub-title">Cerimónia</p>
+                                    <h3 class="portfolio-three__title"><a href="portfolio-details.html">Formatura de
+                                            Agentes</a></h3>
+                                </div>
+                                <div class="portfolio-three__arrow">
+                                    <a class="img-popup" href="assets/images/logo/noticaisacipol.jpg">
+                                        <i class="fas fa-expand-arrows-alt"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!--Portfolio Three Single End-->
+
+                    <!--Treino Prático-->
+                    <div class="col-xl-4 col-lg-4 col-md-6">
+                        <div class="portfolio-three__single">
+                            <div class="portfolio-three__img-box">
+                                <div class="portfolio-three__img">
+                                    <img src="assets/images/logo/preparao_fisica_.jpg" alt="Treino Prático de Campo"
+                                        style="height: 300px; object-fit: cover;">
+                                    <div class="image-overlay"
+                                        style="position: absolute; top: 0; left: 0; right: 0; bottom: 0; background: rgba(0,0,0,0.4);">
+                                    </div>
+                                </div>
+                                <div class="portfolio-three__content">
+                                    <p class="portfolio-three__sub-title">Treino</p>
+                                    <h3 class="portfolio-three__title"><a href="portfolio-details.html">Treino
+                                            Prático de Campo</a></h3>
+                                </div>
+                                <div class="portfolio-three__arrow">
+                                    <a class="img-popup" href="assets/images/logo/preparao_fisica_.jpg">
+                                        <i class="fas fa-expand-arrows-alt"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!--Portfolio Three Single End-->
+
+                    <!--Visita Oficial-->
+                    <div class="col-xl-4 col-lg-4 col-md-6">
+                        <div class="portfolio-three__single">
+                            <div class="portfolio-three__img-box">
+                                <div class="portfolio-three__img">
+                                    <img src="assets/images/logo/interior.jpg" alt="Visita Ministerial"
+                                        style="height: 300px; object-fit: cover;">
+                                    <div class="image-overlay"
+                                        style="position: absolute; top: 0; left: 0; right: 0; bottom: 0; background: rgba(0,0,0,0.4);">
+                                    </div>
+                                </div>
+                                <div class="portfolio-three__content">
+                                    <p class="portfolio-three__sub-title">Visita</p>
+                                    <h3 class="portfolio-three__title"><a href="portfolio-details.html">Visita
+                                            do Ministro do Interior</a></h3>
+                                </div>
+                                <div class="portfolio-three__arrow">
+                                    <a class="img-popup" href="assets/images/logo/interior.jpg">
+                                        <i class="fas fa-expand-arrows-alt"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!--Portfolio Three Single End-->
+
+                    <!--Aula Teórica-->
+                    <div class="col-xl-4 col-lg-4 col-md-6">
+                        <div class="portfolio-three__single">
+                            <div class="portfolio-three__img-box">
+                                <div class="portfolio-three__img">
+                                    <img src="assets/images/logo/curs.png" alt="Aulas Teóricas"
+                                        style="height: 300px; object-fit: cover;">
+                                    <div class="image-overlay"
+                                        style="position: absolute; top: 0; left: 0; right: 0; bottom: 0; background: rgba(0,0,0,0.4);">
+                                    </div>
+                                </div>
+                                <div class="portfolio-three__content">
+                                    <p class="portfolio-three__sub-title">Ensino</p>
+                                    <h3 class="portfolio-three__title"><a href="portfolio-details.html">Aulas
+                                            Teóricas</a></h3>
+                                </div>
+                                <div class="portfolio-three__arrow">
+                                    <a class="img-popup" href="assets/images/logo/curs.png">
+                                        <i class="fas fa-expand-arrows-alt"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!--Portfolio Three Single End-->
+
+                    <!--Cerimónia de Juramento-->
+                    <div class="col-xl-4 col-lg-4 col-md-6">
+                        <div class="portfolio-three__single">
+                            <div class="portfolio-three__img-box">
+                                <div class="portfolio-three__img">
+                                    <img src="assets/images/logo/zandamela.jpg" alt="Juramento à Bandeira"
+                                        style="height: 300px; object-fit: cover;">
+                                    <div class="image-overlay"
+                                        style="position: absolute; top: 0; left: 0; right: 0; bottom: 0; background: rgba(0,0,0,0.4);">
+                                    </div>
+                                </div>
+                                <div class="portfolio-three__content">
+                                    <p class="portfolio-three__sub-title">Cerimónia</p>
+                                    <h3 class="portfolio-three__title"><a
+                                            href="assets/images/logo/zandamela.jpg">Juramento à
+                                            Bandeira</a></h3>
+                                </div>
+                                <div class="portfolio-three__arrow">
+                                    <a class="img-popup" href="assets/images/logo/zandamela.jpg">
+                                        <i class="fas fa-expand-arrows-alt"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!--Portfolio Three Single End-->
+
+                    <!--Simulação Operacional-->
+                    <div class="col-xl-4 col-lg-4 col-md-6">
+                        <div class="portfolio-three__single">
+                            <div class="portfolio-three__img-box">
+                                <div class="portfolio-three__img">
+                                    <img src="assets/images/logo/simulacao.jpeg" alt="Simulação Operacional"
+                                        style="height: 300px; object-fit: cover;">
+                                    <div class="image-overlay"
+                                        style="position: absolute; top: 0; left: 0; right: 0; bottom: 0; background: rgba(0,0,0,0.4);">
+                                    </div>
+                                </div>
+                                <div class="portfolio-three__content">
+                                    <p class="portfolio-three__sub-title">Prática</p>
+                                    <h3 class="portfolio-three__title "><a href="portfolio-details.html">Simulação
+                                            Operacional</a></h3>
+                                </div>
+                                <div class="portfolio-three__arrow">
+                                    <a class="img-popup" href="assets/images/logo/simulacao.jpeg">
+                                        <i class="fas fa-expand-arrows-alt"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!--Portfolio Three Single End-->
+                </div>
+
+
+            </div>
+    </section>
+
+
+
+
+
+
+
+
+
+
+    <!-- dbjfdbsfbshf -->
+
+
+
+    <!-- news notice -->
+
+
+    <!-- <section class="bg-light py-5">
+            <div class="container">
+                <div class="section-title custom-col title-col ">
+                    <h2>Últimas notícias</h2>
+                </div>
+
+                <div class="linebg" style="height: 4px;">
+
+                </div>
+             
+                <div class="row">
+           
+                    <div class="view-rows col-lg-4 col-md-6 col-sm-12 mb-4">
+                        <div class="custom-card">
+                            <img src="assets/images/logo/news1.jpg" alt="Treinamento Tático Urbano" class="card-image">
+
+                            <div class="gradient-overlay"></div>
+
+                            <div class="slider-container">
+                                <div class="slider-visible">
+                                    <h3 class="title">Novo Programa de Treinamento Tático Urbano</h3>
+                                    <span class="category-name category-training">
+                                        <i class="icon-square"></i>
+                                        <span>News</span>
+                                    </span>
+                                </div>
+                                <div class="slider-hidden">
+                                    <div class="text-summary-or-trimmed">
+                                        <div>Curso intensivo de 6 meses para oficiais, focando em operações em ambientes
+                                            urbanos complexos e técnicas de intervenção avançadas com certificação
+                                            internacional.</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+               
+                    <div class=" view-rows col-lg-4 col-md-6 col-sm-12 mb-4">
+                        <div class="custom-card">
+                            <img src="assets/images/logo/hero2.jpg" alt="Investigação Científica" class="card-image">
+
+                            <div class="gradient-overlay"></div>
+
+                            <div class="slider-container">
+                                <div class="slider-visible">
+                                    <h3 class="title">Técnicas Avançadas de Investigação Criminal</h3>
+                                    <span class="category-name category-investigation">
+                                        <i class="icon-square"></i>
+                                        <span>Investigação</span>
+                                    </span>
+                                </div>
+                                <div class="slider-hidden">
+                                    <div class="text-summary-or-trimmed">
+                                        <div>Implementação de novos métodos científicos e tecnológicos para análise
+                                            forense digital e investigação de crimes complexos com equipamento de última
+                                            geração.</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+          
+                    <div class=" view-rows col-lg-4 col-md-6 col-sm-12 mb-4">
+                        <div class="custom-card">
+                            <img src="assets/images/logo/news4.png" alt="Cooperação Internacional" class="card-image">
+
+                            <div class="gradient-overlay"></div>
+
+                            <div class="slider-container">
+                                <div class="slider-visible">
+                                    <h3 class="title">Acordo de Cooperação com Europol</h3>
+                                    <span class="category-name category-cooperation">
+                                        <i class="icon-square"></i>
+                                        <span>Cooperação</span>
+                                    </span>
+                                </div>
+                                <div class="slider-hidden">
+                                    <div class="text-summary-or-trimmed">
+                                        <div>Parceria estratégica para combate ao crime organizado transnacional e troca
+                                            de inteligência policial em nível europeu com 15 países participantes.</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+        
+                <div class="row">
+                 
+                    <div class=" view-rows col-lg-4 col-md-6 col-sm-12 mb-4">
+                        <div class="custom-card">
+                            <img src="assets/images/logo/news3.jpg" alt="Formação de Oficiais" class="card-image">
+
+                            <div class="gradient-overlay"></div>
+
+                            <div class="slider-container">
+                                <div class="slider-visible">
+                                    <h3 class="title">Curso de Formação de Oficiais 2024</h3>
+                                    <span class="category-name category-training">
+                                        <i class="icon-square"></i>
+                                        <span>Formação</span>
+                                    </span>
+                                </div>
+                                <div class="slider-hidden">
+                                    <div class="text-summary-or-trimmed">
+                                        <div>Inscrições abertas para o curso bianual de formação de oficiais com duração
+                                            de 2 anos e certificação nacional. Vagas limitadas.</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    
+                    <div class=" view-rows col-lg-4 col-md-6 col-sm-12 mb-4">
+                        <div class="custom-card">
+                            <img src="assets/images/logo/news5.jpg" alt="Programa Nacional de Segurança"
+                                class="card-image">
+
+                            <div class="gradient-overlay"></div>
+
+                            <div class="slider-container">
+                                <div class="slider-visible">
+                                    <h3 class="title">Lançamento do Programa Nacional de Segurança</h3>
+                                    <span class="category-name category-news">
+                                        <i class="icon-square"></i>
+                                        <span>Notícia</span>
+                                    </span>
+                                </div>
+                                <div class="slider-hidden">
+                                    <div class="text-summary-or-trimmed">
+                                        <div>Nova iniciativa do governo em parceria com a ACIPOL para reforçar a
+                                            segurança pública em todas as regiões do país com investimento de 50
+                                            milhões.</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class=" view-rows col-lg-4 col-md-6 col-sm-12 mb-4">
+                        <div class="custom-card">
+                            <img src="assets/images/logo/leadership.jpg" alt="Workshop Internacional"
+                                class="card-image">
+
+                            <div class="gradient-overlay"></div>
+
+                            <div class="slider-container">
+                                <div class="slider-visible">
+                                    <h3 class="title">Workshop Internacional de Polícia Judiciária</h3>
+                                    <span class="category-name category-events">
+                                        <i class="icon-square"></i>
+                                        <span>Eventos</span>
+                                    </span>
+                                </div>
+                                <div class="slider-hidden">
+                                    <div class="text-summary-or-trimmed">
+                                        <div>Evento anual reúne especialistas de 15 países para discutir tendências e
+                                            desafios na investigação criminal moderna. Inscrições abertas.</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </section> -->
+    <!-- Bootstrap JS -->
+
+
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+
+
+
+
+    <!-- i want to -->
+
+    <section class="brand-one brand-two">
+        <div class="container">
+            <div class="brand-one__title" style="color: #0ca554;">
+                <p>Nossos parceiros &amp; Apoiadores</p>
+            </div>
+            <!-- ======= Secção de Parceiros ======= -->
+            <section class="brand-one py-1">
+                <div class="container text-center">
+                    <div class="d-flex justify-content-center align-items-center flex-wrap gap-5">
+                        <div class="brand-one__single">
+                            <div class="brand-one__img">
+                                <img src="assets/images/logo/morenet.png" alt="Parceiro Morenet"
+                                    style="max-width: 180px; height: auto;">
+                            </div>
+                        </div>
+                        <div class="brand-one__single">
+                            <div class="brand-one__img">
+                                <img src="assets/images/logo/103777158-symbol-of-mozambique-national-emblem-removebg-preview.png"
+                                    alt="Parceiro Emblema Nacional" style="max-width: 180px; height: auto;">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+        </div>
+    </section>
+    <!-- end i want to -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!-- Site Footer Start -->
+    <footer class="site-footer">
+        <div class="container">
+            <div class="site-footer__middle">
+                <div class="row">
+                    <!-- Coluna 1: Contactos e Informações -->
+                    <div class="col-xl-4 col-lg-4 col-md-6 mb-4">
+                        <div class="footer-widget__column footer-widget__Contact">
+                            <div class="footer-widget__title-box">
+                                <h3 class="footer-widget__title">Contactos</h3>
+                            </div>
+                            <div class="footer-widget__Contact-text mb-3">
+                                <strong>Academia de Ciências Policiais (ACIPOL)</strong><br>
+                                Ministério do Interior<br>
+                                Maputo, Moçambique
+                            </div>
+                            <ul class="footer-widget__Contact-list list-unstyled">
+                                <li class="mb-2">
+                                    <div class="icon">
+                                        <i class="fas fa-envelope"></i>
+                                    </div>
+                                    <div class="text">
+                                        <p><a href="mailto:info@acipol.gov.mz">info@acipol.gov.mz</a></p>
+                                    </div>
+                                </li>
+                                <li class="mb-2">
+                                    <div class="icon">
+                                        <i class="fas fa-phone"></i>
+                                    </div>
+                                    <div class="text">
+                                        <p><a href="tel:+25821492300">+21-470542</a></p>
+                                    </div>
+                                </li>
+                                <li class="mb-2">
+                                    <div class="icon">
+                                        <i class="fas fa-map-marker-alt"></i>
+                                    </div>
+                                    <div class="text">
+                                        <p>Estrada Nacional nº 1, Km 16, no bairro de Michafutene</p>
+                                    </div>
+                                </li>
+                                <li class="mb-2">
+                                    <div class="icon">
+                                        <i class="fab fa-facebook-f"></i>
+                                    </div>
+                                    <div class="text">
+                                        <p>facebook</p>
+                                    </div>
+                                </li>
+                            </ul>
+
+                        </div>
+                    </div>
+
+                    <!-- Coluna 2: Cursos e Formação -->
+                    <div class="col-xl-4 col-lg-4 col-md-6 mb-4">
+                        <div class="footer-widget__column footer-widget__link">
+                            <div class="footer-widget__title-box">
+                                <h3 class="footer-widget__title">Cursos & Formação</h3>
+                            </div>
+                            <ul class="footer-widget__link-list list-unstyled">
+                                <li><a href="licenciatura-ciencias-policiais.html">Licenciatura em Ciências
+                                        Policiais</a></li>
+                                <li><a href="mestrado-ciencias-policiais.html">Mestrado em Ciências
+                                        Policiais</a>
+                                </li>
+                                <li><a href="cursos-especializacao.html">Cursos de Especialização</a></li>
+                                <li><a href="investigacao-criminal.html">Investigação Criminal</a></li>
+                                <li><a href="policiamento-ambiental.html">Policiamento Ambiental</a></li>
+                                <li><a href="direitos-humanos.html">Direitos Humanos</a></li>
+                                <li><a href="cursos-executivos.html">Cursos Executivos</a></li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <!-- Coluna 3: Informações Académicas -->
+                    <div class="col-xl-4 col-lg-4 col-md-6 mb-4">
+                        <div class="footer-widget__column footer-widget__explore">
+                            <div class="footer-widget__title-box">
+                                <h3 class="footer-widget__title">Informações</h3>
+                            </div>
+                            <ul class="footer-widget__link-list list-unstyled">
+                                <li><a href="admission.html">Processo de Admissão</a></li>
+                                <li><a href="calendario-academico.html">Calendário Académico</a></li>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="site-footer__bottom">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-lg-8 col-md-7">
+                        <div class="site-footer__bottom-inner">
+                            <p class="site-footer__bottom-text mb-0">
+                                Desenvolvido Pela Mechanical tecnológia.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-5 text-md-end">
+                        <div class="footer-links">
+                            <a href="politica-privacidade.html" class="footer-link">Política de Privacidade</a>
+                            <span class="mx-2">|</span>
+                            <a href="termos-uso.html" class="footer-link">Termos de Uso</a>
+
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Site Footer End -->
+
+
+    </div><!-- /.page-wrapper -->
+
+
+    <div class="mobile-nav__wrapper">
+        <div class="mobile-nav__overlay mobile-nav__toggler"></div>
+        <!-- /.mobile-nav__overlay -->
+        <div class="mobile-nav__content">
+            <span class="mobile-nav__close mobile-nav__toggler"><i class="fa fa-times"></i></span>
+
+            <div class="logo-box">
+                <a href="index.html" aria-label="logo image"><img src="assets/images/resources/logo-1.png" width="94"
+                        alt="" /></a>
+            </div>
+            <!-- /.logo-box -->
+            <div class="mobile-nav__container"></div>
+            <!-- /.mobile-nav__container -->
+
+            <ul class="mobile-nav__contact list-unstyled">
+                <li>
+                    <i class="fa fa-envelope"></i>
+                    <a href="mailto:needhelp@packageName__.com">needhelp@govity.com</a>
+                </li>
+                <li>
+                    <i class="fa fa-phone-alt"></i>
+                    <a href="tel:666-888-0000">666 888 0000</a>
+                </li>
+            </ul><!-- /.mobile-nav__contact -->
+            <div class="mobile-nav__top">
+                <div class="mobile-nav__social">
+                    <a href="#" class="fab fa-twitter"></a>
+                    <a href="#" class="fab fa-facebook-square"></a>
+                    <a href="#" class="fab fa-pinterest-p"></a>
+                    <a href="#" class="fab fa-instagram"></a>
+                </div><!-- /.mobile-nav__social -->
+            </div><!-- /.mobile-nav__top -->
+
+
+
+        </div>
+        <!-- /.mobile-nav__content -->
+    </div>
+    <!-- /.mobile-nav__wrapper -->
+
+    <div class="search-popup">
+        <div class="search-popup__overlay search-toggler"></div>
+        <!-- /.search-popup__overlay -->
+        <div class="search-popup__content">
+            <form action="#">
+                <label for="search" class="sr-only">search here</label><!-- /.sr-only -->
+                <input type="text" id="search" placeholder="Search Here..." />
+                <button type="submit" aria-label="search submit" class="thm-btn">
+                    <i class="icon-magnifying-glass"></i>
+                </button>
+            </form>
+        </div>
+        <!-- /.search-popup__content -->
+    </div>
+    <!-- /.search-popup -->
+
+    <a href="#" data-target="html" class="scroll-to-target scroll-to-top" style="display: inline-block;">
+        <i class="fas fa-arrow-up" style="transform: rotate(0deg);"></i>
+    </a>
+
+    <script src="script.js"></script>
+
+
+
+    <script src="assets/vendors/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/vendors/jarallax/jarallax.min.js"></script>
+    <script src="assets/vendors/jquery-ajaxchimp/jquery.ajaxchimp.min.js"></script>
+    <script src="assets/vendors/jquery-appear/jquery.appear.min.js"></script>
+    <script src="assets/vendors/jquery-circle-progress/jquery.circle-progress.min.js"></script>
+    <script src="assets/vendors/jquery-magnific-popup/jquery.magnific-popup.min.js"></script>
+    <script src="assets/vendors/jquery-validate/jquery.validate.min.js"></script>
+    <script src="assets/vendors/nouislider/nouislider.min.js"></script>
+    <script src="assets/vendors/odometer/odometer.min.js"></script>
+    <script src="assets/vendors/swiper/swiper.min.js"></script>
+    <script src="assets/vendors/tiny-slider/tiny-slider.min.js"></script>
+    <script src="assets/vendors/wnumb/wNumb.min.js"></script>
+    <script src="assets/vendors/wow/wow.js"></script>
+    <script src="assets/vendors/isotope/isotope.js"></script>
+    <script src="assets/vendors/countdown/countdown.min.js"></script>
+    <script src="assets/vendors/owl-carousel/owl.carousel.min.js"></script>
+    <script src="assets/vendors/bxslider/jquery.bxslider.min.js"></script>
+    <script src="assets/vendors/bootstrap-select/js/bootstrap-select.min.js"></script>
+    <script src="assets/vendors/vegas/vegas.min.js"></script>
+    <script src="assets/vendors/jquery-ui/jquery-ui.js"></script>
+    <script src="assets/vendors/timepicker/timePicker.js"></script>
+    <script src="assets/vendors/circleType/jquery.circleType.js"></script>
+    <script src="assets/vendors/circleType/jquery.lettering.min.js"></script>
+    <script src="assets/vendors/nice-select/jquery.nice-select.min.js"></script>
+
+
+
+
+
+
+
+    <!-- Jequery Plugins -->
+    <!-- <script src="assets/js/jquery.js"></script> -->
+
+
+    <script>
+        function updateDateTime() {
+            const now = new Date();
+            const dias = ['Domingo', 'Segunda-feira', 'Terça-feira', 'Quarta-feira', 'Quinta-feira', 'Sexta-feira', 'Sábado'];
+            const meses = ['Janeiro', 'Fevereiro', 'Março', 'Abril', 'Maio', 'Junho', 'Julho', 'Agosto', 'Setembro', 'Outubro', 'Novembro', 'Dezembro'];
+            const dataHora = `${dias[now.getDay()]}, ${now.getDate().toString().padStart(2, '0')} de ${meses[now.getMonth()]} de ${now.getFullYear()} | ${now.getHours().toString().padStart(2, '0')}:${now.getMinutes().toString().padStart(2, '0')}:${now.getSeconds().toString().padStart(2, '0')}`;
+            document.getElementById('dateTimeDisplay').textContent = dataHora;
+        }
+        setInterval(updateDateTime, 1000);
+        updateDateTime();
+
+        document.getElementById('languageSelect').addEventListener('change', (e) => {
+            alert(e.target.value === 'en'
+                ? 'Language changed to English (simulação)'
+                : 'Idioma alterado para Português (simulação)');
+        });
+    </script>
+
+    <script>
+        // JavaScript para controlar a transição entre os cursos
+        document.addEventListener('DOMContentLoaded', function () {
+            const courseLinks = document.querySelectorAll('.department-details__services-list a');
+            const courseContents = document.querySelectorAll('.course-content');
+
+            // Função para mostrar o conteúdo do curso selecionado
+            function showCourse(courseId) {
+                // Remover a classe active de todos os links
+                courseLinks.forEach(link => {
+                    link.classList.remove('active');
+                });
+
+                // Adicionar a classe active ao link clicado
+                event.target.classList.add('active');
+
+                // Animação de transição para o conteúdo
+                courseContents.forEach(content => {
+                    if (content.id === 'course-' + courseId) {
+                        content.style.display = 'block';
+                        setTimeout(() => {
+                            content.classList.remove('fade-out');
+                            content.classList.add('fade-in');
+                        }, 10);
+                    } else {
+                        content.classList.remove('fade-in');
+                        content.classList.add('fade-out');
+                        setTimeout(() => {
+                            content.style.display = 'none';
+                        }, 300);
+                    }
+                });
+            }
+
+            // Adicionar evento de clique a todos os links dos cursos
+            courseLinks.forEach(link => {
+                link.addEventListener('click', function (event) {
+                    event.preventDefault();
+                    const courseId = this.getAttribute('data-course');
+                    showCourse(courseId);
+                });
+            });
+        });
+    </script>
+
+
+    <!-- template js -->
+    <script src="assets/js/govity.js"></script>
+</body>
+
+<script>
+    window.addEventListener("load", function () {
+        setTimeout(function () {
+            document.getElementById("preloader").classList.add("hidden");
+        }, 3000); // 3000 milissegundos = 3 segundos
+    });
+</script>
+
+
+<!-- Mirrored from pixydrops.com/govity/main-html/index.html by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 06 Oct 2025 09:40:30 GMT -->
+
+</html>
